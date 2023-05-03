@@ -1,7 +1,8 @@
 .card{
-    max-width:  ;
+    max-width: 1000px;
     display: gird;
-    grid-template-columns:;
-    grid-template-rows: ;
-    
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    margin: 5vh auto;
+    justify-items: center;
+    grid-gap: 5vh;
 }
