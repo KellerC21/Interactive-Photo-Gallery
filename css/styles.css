@@ -1,24 +1,21 @@
-
-body {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+.photo:hover img{
+    transform: scale(125%);
+    transition: .5s;
 }
 
-
-
-
-
-
-
-
-
-
 .gallery {
-    max-width: 1000px;
     display: gird;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(210px, 1fr));
     margin: 5vh auto;
     justify-items: center;
     row-gap: 20px;
+    max-width: 2000px;
+}
+
+#search {
+    width: 60%;
+    min-width: 180px;
+    padding: 10px 15px;
+    margin: 40px auto 30px auto;
 }
