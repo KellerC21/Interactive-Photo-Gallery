@@ -1,6 +1,5 @@
-baguetteBox.run('.gallery');
 
-const search = new Filter('search', 'data-caption');
+
 
 document.queryselector('#search').addEventListener('keyiup', userSearch);
 
