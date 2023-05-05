@@ -1,4 +1,21 @@
-.photo:hover img{
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.photo:hover img {
     transform: scale(125%);
     transition: .5s;
 }
@@ -6,10 +23,10 @@
 .gallery {
     display: gird;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(210px, 1fr));
     margin: auto;
     justify-items: center;
     grid-gap: 20px;
+    padding: 20px;
     max-width: 1000px;
 }
 
@@ -19,4 +36,9 @@
     padding: 10px 15px;
     margin: 40px auto 30px auto;
     justify-content: center;
+}
+
+a {
+    display: flex;
+    justify-content: space-evenly;
 }
