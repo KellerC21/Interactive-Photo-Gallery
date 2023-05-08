@@ -1,26 +1,18 @@
+document.queryselector('search').addEventListener('keyiup', userSearch);
 
+function myFuntion() {
+    const searchInput = document.getElementById('seach').value.toLowerCase();
+    const galleryPhoto = document.getElementsByClassName('gallery-photo');
 
+    for (let i=0; i<galleryPhoto.length; i++) {
+        let captionFilter = galleryPhoto[i].getAttribute('data-caption').toLowerCase;
+        
+        if (captionFilter.includes(searchInput)){
 
-document.queryselector('#search').addEventListener('keyiup', userSearch);
+        } else {
+            galleryPhoto[i].style.display='none';
 
-function userSearch() {
-    const caption = document.querySelectorAll ('a[data-caption]');
-    let captionsList = [];
-
-    for (let i=0; i<caption.length; i++){
-        let captions = caption[i].getAttribute('data-caption');
-        captions.push(captions.toLowerCase());
-
-        let searchVar = document.querySelector('#search');
-        searchVar = searchVar.ariaValueMax.toLowerCase();
-
-    if(captionsList[i].indexOf(searchVar)>-1){
-        captions[i].style.display='block';
-    }
-    else{
-        caption[i].style.display='none';
-
-        }
+        }  
     }
 }
 
