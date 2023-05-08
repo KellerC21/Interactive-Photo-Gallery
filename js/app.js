@@ -9,7 +9,7 @@ function userSearch() {
 
     for (let i=0; i<caption.length; i++){
         let captions = caption[i].getAttribute('data-caption');
-        captionsLet.push(captions.toLowerCase());
+        captions.push(captions.toLowerCase());
 
         let searchVar = document.querySelector('#search');
         searchVar = searchVar.ariaValueMax.toLowerCase();
