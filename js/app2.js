@@ -1,4 +1,4 @@
-document.queryselector('search').addEventListener('keyup', myFuntion);
+document.querySelector('#search').addEventListener('keyup', myFuntion);
 baguetteBox.run('.gallery');
 
 function myFuntion() {
@@ -17,4 +17,3 @@ function myFuntion() {
     }
 }
 
-console.log(userSearch());
