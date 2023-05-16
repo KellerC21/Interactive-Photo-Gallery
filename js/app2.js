@@ -7,10 +7,10 @@ gallerySearch.addEventListener('keyup', e => {
         let gallery = document.querySelectorAll('[data-caption]');
         gallery.forEach(gallery => {
             let caption = gallery.getAttribute('data-caption').toLowerCase();
-            if (gallery.textContent.toLowerCase().includes(currentValue)) {
-                gallery.parentNode.style.display = "block";
+            if (caption.includes(currentValue)) {
+                gallery.parentNode.style.display = '';
             } else {
-                gallery.parentNode.style.display = "none";
+                gallery.parentNode.style.display = 'none';
             }
         });
     });
