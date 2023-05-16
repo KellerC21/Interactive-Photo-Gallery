@@ -1,19 +1,15 @@
-document.querySelector('#search').addEventListener('keyup', myFuntion);
+
 baguetteBox.run('.gallery');
 
-function myFuntion() {
-    const searchInput = document.getElementById('search').value.toLowerCase();
-    const galleryPhoto = document.getElementsByClassName('.photo');
-
-    for (let i=0; i<galleryPhoto.length; i++) {
-        let captionFilter = galleryPhoto[i].getAttribute('data-caption').toLowerCase();
-        
-        if (captionFilter.includes(searchInput)) {
-            galleryPhoto[i].style.display = '';
-        } else {
-            galleryPhoto[i].style.display = 'none';
-
-        }  
-    }
-}
-
+const gallerySearch = document.getElementById('gallerySearch');
+gallerySearch.addEventListener('keyup', e => {
+        let currentValue = e.target.value.toLowerCase();
+        let gallery = document.querySelectorAll('data-caption');
+        gallery.forEach(gallery => {
+            if (gallery.textContent.toLowerCase().includes(currentVaulue)) {
+                gallery.parentNode.style.display = "block";
+            } else {
+                gallery.parentNode.style.display = "none";
+            }
+        });
+    });
