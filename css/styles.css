@@ -20,7 +20,7 @@ body {
 }
 
 .photo:hover img {
-    transform: scale(125%);
+    transform: scale(1.5, 1.5);
     transition: .5s;
 }
 
@@ -38,7 +38,6 @@ body {
     grid-gap: 20px;
     padding: 20px;
     max-width: 1000px;
-    grid-auto-rows: minmax(100px auto);
 }
 
 #search {
